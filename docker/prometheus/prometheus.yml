@@ -24,7 +24,8 @@ scrape_configs:
 
   - job_name: 'catalist_validators_monitoring'
     static_configs:
-      - targets: ['catalist-validators-monitoring:8080']
+      - targets: ['app:8080']
+    metrics_path: /metrics
     metric_relabel_configs:
       - source_labels: [nos_module_id, nos_id]
         regex: '(\d+);(\d+)'

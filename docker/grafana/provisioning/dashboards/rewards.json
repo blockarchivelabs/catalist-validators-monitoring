@@ -581,7 +581,7 @@
                   }
                 ]
               },
-              "unit": "ETH"
+              "unit": "ACE"
             },
             "overrides": []
           },
@@ -1055,7 +1055,7 @@
                   }
                 ]
               },
-              "unit": "ETH"
+              "unit": "ACE"
             },
             "overrides": []
           },
@@ -1226,7 +1226,7 @@
             "axisCenteredZero": false,
             "axisColorMode": "text",
             "axisGridShow": false,
-            "axisLabel": "ETH",
+            "axisLabel": "ACE",
             "axisPlacement": "right",
             "barAlignment": 0,
             "drawStyle": "bars",
@@ -2230,7 +2230,7 @@
               }
             ]
           },
-          "unit": "ETH"
+          "unit": "ACE"
         },
         "overrides": []
       },
@@ -2291,7 +2291,7 @@
               }
             ]
           },
-          "unit": "ETH ⛏️"
+          "unit": "ACE ⛏️"
         },
         "overrides": [
           {
@@ -2384,7 +2384,7 @@
               }
             ]
           },
-          "unit": "ETH"
+          "unit": "ACE"
         },
         "overrides": []
       },
@@ -2447,7 +2447,7 @@
               }
             ]
           },
-          "unit": "ETH"
+          "unit": "ACE"
         },
         "overrides": []
       },
@@ -2510,7 +2510,7 @@
               }
             ]
           },
-          "unit": "ETH"
+          "unit": "ACE"
         },
         "overrides": []
       },
