@@ -1,6 +1,6 @@
 {
   "name": "catalist-validators-monitoring",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "./dist/main.js",
   "private": true,
   "scripts": {
