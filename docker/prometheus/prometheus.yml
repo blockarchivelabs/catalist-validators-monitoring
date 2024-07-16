@@ -19,12 +19,14 @@ scrape_configs:
       - targets: ['cadvisor:8080']
 
   - job_name: 'prometheus'
+    metrics_path: /metrics
     static_configs:
       - targets: ['localhost:9090']
 
   - job_name: 'catalist_validators_monitoring'
     static_configs:
-      - targets: ['catalist-validators-monitoring:8080']
+      - targets: ['app:8080']
+    metrics_path: /metrics
     metric_relabel_configs:
       - source_labels: [nos_module_id, nos_id]
         regex: '(\d+);(\d+)'
