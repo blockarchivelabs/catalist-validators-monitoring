@@ -1,4 +1,4 @@
-import { LOGGER_PROVIDER, LoggerService } from '@lido-nestjs/logger';
+import { LOGGER_PROVIDER, LoggerService } from '@catalist-nestjs/logger';
 import { Inject, Injectable, OnApplicationBootstrap } from '@nestjs/common';
 import { Metrics, getOrCreateMetric } from '@willsoto/nestjs-prometheus';
 import { join } from 'lodash';

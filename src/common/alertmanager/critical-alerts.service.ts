@@ -1,4 +1,4 @@
-import { LOGGER_PROVIDER, LoggerService } from '@lido-nestjs/logger';
+import { LOGGER_PROVIDER, LoggerService } from '@catalist-nestjs/logger';
 import { Inject, Injectable } from '@nestjs/common';
 import { got } from 'got-cjs';
 

@@ -1,10 +1,10 @@
-import { LIDO_CONTRACT_TOKEN, Lido } from '@lido-nestjs/contracts';
+import { CATALIST_CONTRACT_TOKEN, Catalist } from '@catalist-nestjs/contracts';
 import {
   RegistryKeyStorageService,
   RegistryMetaStorageService,
   RegistryOperatorStorageService,
   ValidatorRegistryService,
-} from '@lido-nestjs/registry';
+} from '@catalist-nestjs/registry';
 import { Inject, Injectable } from '@nestjs/common';
 
 import { unblock } from 'common/functions/unblock';
@@ -14,7 +14,7 @@ import { RegistrySource, RegistrySourceKey, RegistrySourceOperator } from '../re
 @Injectable()
 export class LidoSourceService implements RegistrySource {
   constructor(
-    @Inject(LIDO_CONTRACT_TOKEN) public contract: Lido,
+    @Inject(CATALIST_CONTRACT_TOKEN) public contract: Catalist,
 
     protected readonly validatorService: ValidatorRegistryService,
     protected readonly keyStorageService: RegistryKeyStorageService,

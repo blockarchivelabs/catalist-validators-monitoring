@@ -109,9 +109,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -125,7 +123,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "exemplar": true,
-          "expr": "sum(ethereum_validators_monitoring_data_actuality)",
+          "expr": "sum(catalist_validators_monitoring_data_actuality)",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -272,7 +270,7 @@
           },
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sum(ethereum_validators_monitoring_data_actuality)",
+          "expr": "sum(catalist_validators_monitoring_data_actuality)",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -286,7 +284,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "ethereum_validators_monitoring_epoch_number",
+          "expr": "catalist_validators_monitoring_epoch_number",
           "hide": false,
           "legendFormat": "Epoch",
           "range": true,
@@ -342,9 +340,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -357,7 +353,7 @@
             "type": "prometheus",
             "uid": "PBFA97CFB590B2093"
           },
-          "expr": "(sum_over_time((sum(ethereum_validators_monitoring_operator_calculated_balance_calculation_error{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / sum_over_time((sum(ethereum_validators_monitoring_operator_real_balance_delta{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:])) * 100",
+          "expr": "(sum_over_time((sum(catalist_validators_monitoring_operator_calculated_balance_calculation_error{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / sum_over_time((sum(catalist_validators_monitoring_operator_real_balance_delta{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:])) * 100",
           "refId": "A"
         }
       ],
@@ -405,9 +401,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -423,7 +417,7 @@
           },
           "editorMode": "code",
           "exemplar": true,
-          "expr": "sum(ethereum_validators_monitoring_epoch_number)",
+          "expr": "sum(catalist_validators_monitoring_epoch_number)",
           "interval": "",
           "legendFormat": "",
           "range": true,
@@ -506,9 +500,7 @@
           "id": 1765,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "list",
               "placement": "right",
               "showLegend": false,
@@ -529,7 +521,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "ethereum_validators_monitoring_avg_chain_reward{duty=\"attestation\"} and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "catalist_validators_monitoring_avg_chain_reward{duty=\"attestation\"} and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "avg",
               "range": true,
@@ -602,9 +594,7 @@
           "id": 1766,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "list",
               "placement": "right",
               "showLegend": false,
@@ -625,7 +615,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "ethereum_validators_monitoring_avg_chain_reward{duty=\"proposal\"} / 10^9 and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "catalist_validators_monitoring_avg_chain_reward{duty=\"proposal\"} / 10^9 and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "avg",
               "range": true,
@@ -698,9 +688,7 @@
           "id": 1767,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "list",
               "placement": "right",
               "showLegend": false,
@@ -721,7 +709,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "ethereum_validators_monitoring_avg_chain_reward{duty=\"sync\"} and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "catalist_validators_monitoring_avg_chain_reward{duty=\"sync\"} and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "avg",
               "range": true,
@@ -795,9 +783,7 @@
           "id": 1768,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "list",
               "placement": "right",
               "showLegend": false,
@@ -818,7 +804,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "ethereum_validators_monitoring_avg_chain_penalty{duty=\"attestation\"} and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "catalist_validators_monitoring_avg_chain_penalty{duty=\"attestation\"} and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "avg",
               "range": true,
@@ -892,9 +878,7 @@
           "id": 1769,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "list",
               "placement": "right",
               "showLegend": false,
@@ -915,7 +899,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "ethereum_validators_monitoring_avg_chain_penalty{duty=\"sync\"} and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "catalist_validators_monitoring_avg_chain_penalty{duty=\"sync\"} and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "avg",
               "range": true,
@@ -989,9 +973,7 @@
           "id": 1770,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "list",
               "placement": "right",
               "showLegend": false,
@@ -1012,7 +994,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "ethereum_validators_monitoring_avg_chain_missed_reward{duty=\"attestation\"} and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "catalist_validators_monitoring_avg_chain_missed_reward{duty=\"attestation\"} and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "avg",
               "range": true,
@@ -1086,9 +1068,7 @@
           "id": 1771,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "list",
               "placement": "right",
               "showLegend": false,
@@ -1109,7 +1089,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "ethereum_validators_monitoring_avg_chain_missed_reward{duty=\"proposal\"} / 10^9 and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "catalist_validators_monitoring_avg_chain_missed_reward{duty=\"proposal\"} / 10^9 and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "avg",
               "range": true,
@@ -1183,9 +1163,7 @@
           "id": 1772,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "list",
               "placement": "right",
               "showLegend": false,
@@ -1206,7 +1184,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "ethereum_validators_monitoring_avg_chain_missed_reward{duty=\"sync\"} and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "catalist_validators_monitoring_avg_chain_missed_reward{duty=\"sync\"} and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "avg",
               "range": true,
@@ -1364,10 +1342,7 @@
               {
                 "id": "custom.lineStyle",
                 "value": {
-                  "dash": [
-                    10,
-                    10
-                  ],
+                  "dash": [10, 10],
                   "fill": "dash"
                 }
               }
@@ -1405,10 +1380,7 @@
               {
                 "id": "custom.lineStyle",
                 "value": {
-                  "dash": [
-                    10,
-                    10
-                  ],
+                  "dash": [10, 10],
                   "fill": "dash"
                 }
               }
@@ -1446,10 +1418,7 @@
               {
                 "id": "custom.lineStyle",
                 "value": {
-                  "dash": [
-                    10,
-                    10
-                  ],
+                  "dash": [10, 10],
                   "fill": "dash"
                 }
               }
@@ -1485,7 +1454,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "sum by () (ethereum_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+          "expr": "sum by () (catalist_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
           "interval": "",
           "legendFormat": "Rewards",
           "range": true,
@@ -1497,7 +1466,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "sum by () (ethereum_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) / 10^9 AND ON() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+          "expr": "sum by () (catalist_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) / 10^9 AND ON() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
           "hide": false,
           "legendFormat": "Penalties",
           "range": true,
@@ -1509,7 +1478,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "sum by () (ethereum_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 AND ON() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+          "expr": "sum by () (catalist_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 AND ON() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
           "hide": false,
           "legendFormat": "Missed rewards",
           "range": true,
@@ -1521,7 +1490,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "sum by () (ethereum_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+          "expr": "sum by () (catalist_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
           "hide": false,
           "legendFormat": "Rewards (line)",
           "range": true,
@@ -1533,7 +1502,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "sum by () (ethereum_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+          "expr": "sum by () (catalist_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
           "hide": false,
           "legendFormat": "Penalties (line)",
           "range": true,
@@ -1545,7 +1514,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "sum by () (ethereum_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+          "expr": "sum by () (catalist_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
           "hide": false,
           "legendFormat": "Missed rewards (line)",
           "range": true,
@@ -1636,9 +1605,7 @@
       "id": 1776,
       "options": {
         "legend": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "displayMode": "list",
           "placement": "bottom",
           "showLegend": true
@@ -1655,7 +1622,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "editorMode": "code",
-          "expr": "((sum by () (ethereum_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0)) / (((sum by () (ethereum_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0)) + ((sum by () (ethereum_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0)) + (sum by () (ethereum_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0)) * 100",
+          "expr": "((sum by () (catalist_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0)) / (((sum by () (catalist_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0)) + ((sum by () (catalist_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0)) + (sum by () (catalist_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0)) * 100",
           "legendFormat": "Percent",
           "range": true,
           "refId": "A"
@@ -1720,9 +1687,7 @@
         "minVizWidth": 0,
         "orientation": "horizontal",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -1736,7 +1701,7 @@
             "type": "prometheus",
             "uid": "PBFA97CFB590B2093"
           },
-          "expr": "(sum_over_time((sum by () (ethereum_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:])) / ((sum_over_time((sum by () (ethereum_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:])) + (sum_over_time((sum by () (ethereum_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:])) + sum_over_time((sum by () (ethereum_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:])) * 100",
+          "expr": "(sum_over_time((sum by () (catalist_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:])) / ((sum_over_time((sum by () (catalist_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:])) + (sum_over_time((sum by () (catalist_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:])) + sum_over_time((sum by () (catalist_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:])) * 100",
           "refId": "A"
         }
       ],
@@ -1977,16 +1942,8 @@
         "footer": {
           "countRows": false,
           "enablePagination": true,
-          "fields": [
-            "Value #reward (sum)",
-            "Value #penalty (sum)",
-            "Value #missed (sum)",
-            "Value #earned (sum)",
-            "Value #error (sum)"
-          ],
-          "reducer": [
-            "sum"
-          ],
+          "fields": ["Value #reward (sum)", "Value #penalty (sum)", "Value #missed (sum)", "Value #earned (sum)", "Value #error (sum)"],
+          "reducer": ["sum"],
           "show": true
         },
         "frameIndex": 0,
@@ -2006,7 +1963,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "exemplar": false,
-          "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+          "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -2020,7 +1977,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "exemplar": false,
-          "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+          "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -2034,7 +1991,7 @@
             "uid": "PBFA97CFB590B2093"
           },
           "exemplar": false,
-          "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+          "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -2049,7 +2006,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "(sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_calculated_balance_calculation_error{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9)",
+          "expr": "(sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_calculated_balance_calculation_error{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -2064,7 +2021,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_withdrawals_sum{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+          "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_withdrawals_sum{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -2080,87 +2037,59 @@
           "options": {
             "fields": {
               "Value #all": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #att": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #bad": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #earned": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #effectiveness": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #error": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #good": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #missed": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #penalty": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #prop": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #reward": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #sync": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #total": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "Value #withdrawn": {
-                "aggregations": [
-                  "sum"
-                ],
+                "aggregations": ["sum"],
                 "operation": "aggregate"
               },
               "nos_name": {
@@ -2180,11 +2109,7 @@
             "alias": "rpm",
             "mode": "reduceRow",
             "reduce": {
-              "include": [
-                "Value #reward (sum)",
-                "Value #missed (sum)",
-                "Value #penalty (sum)"
-              ],
+              "include": ["Value #reward (sum)", "Value #missed (sum)", "Value #penalty (sum)"],
               "reducer": "sum"
             }
           }
@@ -2322,9 +2247,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -2338,7 +2261,7 @@
             "type": "prometheus",
             "uid": "PBFA97CFB590B2093"
           },
-          "expr": "sum_over_time((sum by () (ethereum_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+          "expr": "sum_over_time((sum by () (catalist_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
           "refId": "A"
         }
       ],
@@ -2410,9 +2333,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -2427,7 +2348,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "sum_over_time((sum by () (ethereum_validators_monitoring_operator_calculated_balance_delta{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+          "expr": "sum_over_time((sum by () (catalist_validators_monitoring_operator_calculated_balance_delta{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
           "instant": true,
           "legendFormat": "Total sum",
           "range": false,
@@ -2480,9 +2401,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -2495,7 +2414,7 @@
             "type": "prometheus",
             "uid": "PBFA97CFB590B2093"
           },
-          "expr": "sum_over_time((sum by () (ethereum_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+          "expr": "sum_over_time((sum by () (catalist_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
           "refId": "A"
         }
       ],
@@ -2545,9 +2464,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -2560,7 +2477,7 @@
             "type": "prometheus",
             "uid": "PBFA97CFB590B2093"
           },
-          "expr": "sum_over_time((sum by () (ethereum_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+          "expr": "sum_over_time((sum by () (catalist_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
           "refId": "A"
         }
       ],
@@ -2610,9 +2527,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -2625,7 +2540,7 @@
             "type": "prometheus",
             "uid": "PBFA97CFB590B2093"
           },
-          "expr": "sum_over_time((sum by () (ethereum_validators_monitoring_operator_withdrawals_sum{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+          "expr": "sum_over_time((sum by () (catalist_validators_monitoring_operator_withdrawals_sum{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
           "refId": "A"
         }
       ],
@@ -2761,9 +2676,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": [],
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": true
             },
             "frameIndex": 0,
@@ -2783,7 +2696,7 @@
                 "uid": "PBFA97CFB590B2093"
               },
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_reward{duty=\"attestation\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_reward{duty=\"attestation\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -2797,7 +2710,7 @@
                 "uid": "PBFA97CFB590B2093"
               },
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_reward{duty=\"proposal\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_reward{duty=\"proposal\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -2811,7 +2724,7 @@
                 "uid": "PBFA97CFB590B2093"
               },
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_reward{duty=\"sync\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_reward{duty=\"sync\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -2826,7 +2739,7 @@
               },
               "editorMode": "code",
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -2842,45 +2755,31 @@
               "options": {
                 "fields": {
                   "Value #all": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #att": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #bad": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #good": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #prop": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #sync": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #total": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "nos_name": {
@@ -2981,9 +2880,7 @@
           "id": 1744,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true,
@@ -3004,7 +2901,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "sum by (nos_name) (ethereum_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "sum by (nos_name) (catalist_validators_monitoring_operator_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "{{nos_name}}",
               "range": true,
@@ -3139,9 +3036,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": [],
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": true
             },
             "frameIndex": 0,
@@ -3161,7 +3056,7 @@
                 "uid": "PBFA97CFB590B2093"
               },
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_penalty{duty=\"attestation\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_penalty{duty=\"attestation\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -3175,7 +3070,7 @@
                 "uid": "PBFA97CFB590B2093"
               },
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_penalty{duty=\"sync\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_penalty{duty=\"sync\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -3190,7 +3085,7 @@
               },
               "editorMode": "code",
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -3206,45 +3101,31 @@
               "options": {
                 "fields": {
                   "Value #all": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #att": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #bad": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #good": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #prop": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #sync": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #total": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "nos_name": {
@@ -3345,9 +3226,7 @@
           "id": 1750,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true,
@@ -3368,7 +3247,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "sum by (nos_name) (ethereum_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "sum by (nos_name) (catalist_validators_monitoring_operator_penalty{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "{{nos_name}}",
               "range": true,
@@ -3511,9 +3390,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": [],
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": true
             },
             "frameIndex": 0,
@@ -3533,7 +3410,7 @@
                 "uid": "PBFA97CFB590B2093"
               },
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_missed_reward{duty=\"attestation\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_missed_reward{duty=\"attestation\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -3547,7 +3424,7 @@
                 "uid": "PBFA97CFB590B2093"
               },
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_missed_reward{duty=\"proposal\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_missed_reward{duty=\"proposal\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -3561,7 +3438,7 @@
                 "uid": "PBFA97CFB590B2093"
               },
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_missed_reward{duty=\"sync\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_missed_reward{duty=\"sync\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -3576,7 +3453,7 @@
               },
               "editorMode": "code",
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -3592,51 +3469,35 @@
               "options": {
                 "fields": {
                   "Value #A": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #all": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #att": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #bad": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #good": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #prop": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #sync": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #total": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "nos_name": {
@@ -3742,9 +3603,7 @@
           "id": 1751,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true,
@@ -3765,7 +3624,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "sum by (nos_name) (ethereum_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "sum by (nos_name) (catalist_validators_monitoring_operator_missed_reward{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "{{nos_name}}",
               "range": true,
@@ -3900,9 +3759,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": [],
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": true
             },
             "frameIndex": 0,
@@ -3922,7 +3779,7 @@
                 "uid": "PBFA97CFB590B2093"
               },
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_withdrawals_sum{type=\"partial\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_withdrawals_sum{type=\"partial\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -3936,7 +3793,7 @@
                 "uid": "PBFA97CFB590B2093"
               },
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_withdrawals_sum{type=\"full\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_withdrawals_sum{type=\"full\", nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -3951,7 +3808,7 @@
               },
               "editorMode": "code",
               "exemplar": false,
-              "expr": "sum_over_time((sum by (nos_name) (ethereum_validators_monitoring_operator_withdrawals_sum{nos_name=~'${nos_name_array_var}'}) AND ON() changes(ethereum_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
+              "expr": "sum_over_time((sum by (nos_name) (catalist_validators_monitoring_operator_withdrawals_sum{nos_name=~'${nos_name_array_var}'}) AND ON() changes(catalist_validators_monitoring_epoch_number[25s]) > 0)[$__range:]) / 10^9",
               "format": "table",
               "hide": false,
               "instant": true,
@@ -3967,57 +3824,39 @@
               "options": {
                 "fields": {
                   "Value #all": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #att": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #bad": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #full": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #good": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #partial": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #prop": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #sync": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "Value #total": {
-                    "aggregations": [
-                      "sum"
-                    ],
+                    "aggregations": ["sum"],
                     "operation": "aggregate"
                   },
                   "nos_name": {
@@ -4120,9 +3959,7 @@
           "id": 1781,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true,
@@ -4143,7 +3980,7 @@
               },
               "editorMode": "code",
               "exemplar": true,
-              "expr": "sum by (nos_name) (ethereum_validators_monitoring_operator_withdrawals_sum{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(ethereum_validators_monitoring_epoch_number[$__rate_interval]) > 0",
+              "expr": "sum by (nos_name) (catalist_validators_monitoring_operator_withdrawals_sum{nos_name=~'${nos_name_array_var}'}) / 10^9 and on() changes(catalist_validators_monitoring_epoch_number[$__rate_interval]) > 0",
               "interval": "",
               "legendFormat": "{{nos_name}}",
               "range": true,
@@ -4175,7 +4012,7 @@
           "type": "prometheus",
           "uid": "PBFA97CFB590B2093"
         },
-        "definition": "query_result(ethereum_validators_monitoring_epoch_number)",
+        "definition": "query_result(catalist_validators_monitoring_epoch_number)",
         "description": "Last epoch number",
         "hide": 2,
         "includeAll": false,
@@ -4184,7 +4021,7 @@
         "name": "epoch_number_var",
         "options": [],
         "query": {
-          "query": "query_result(ethereum_validators_monitoring_epoch_number)",
+          "query": "query_result(catalist_validators_monitoring_epoch_number)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 2,
@@ -4203,7 +4040,7 @@
           "type": "prometheus",
           "uid": "PBFA97CFB590B2093"
         },
-        "definition": "query_result(ethereum_validators_monitoring_sync_participation_distance_down_from_chain_avg)",
+        "definition": "query_result(catalist_validators_monitoring_sync_participation_distance_down_from_chain_avg)",
         "description": "Sync participation distance down from Blockchain average",
         "hide": 2,
         "includeAll": false,
@@ -4212,7 +4049,7 @@
         "name": "sync_participation_distance_var",
         "options": [],
         "query": {
-          "query": "query_result(ethereum_validators_monitoring_sync_participation_distance_down_from_chain_avg)",
+          "query": "query_result(catalist_validators_monitoring_sync_participation_distance_down_from_chain_avg)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 2,
@@ -4231,14 +4068,14 @@
           "type": "prometheus",
           "uid": "PBFA97CFB590B2093"
         },
-        "definition": "label_values(ethereum_validators_monitoring_validator_count_miss_attestation_last_n_epoch, epoch_interval)",
+        "definition": "label_values(catalist_validators_monitoring_validator_count_miss_attestation_last_n_epoch, epoch_interval)",
         "hide": 2,
         "includeAll": false,
         "multi": false,
         "name": "att_epochs_var",
         "options": [],
         "query": {
-          "query": "label_values(ethereum_validators_monitoring_validator_count_miss_attestation_last_n_epoch, epoch_interval)",
+          "query": "label_values(catalist_validators_monitoring_validator_count_miss_attestation_last_n_epoch, epoch_interval)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -4257,14 +4094,14 @@
           "type": "prometheus",
           "uid": "PBFA97CFB590B2093"
         },
-        "definition": "label_values(ethereum_validators_monitoring_validator_count_with_sync_participation_less_avg_last_n_epoch, epoch_interval)",
+        "definition": "label_values(catalist_validators_monitoring_validator_count_with_sync_participation_less_avg_last_n_epoch, epoch_interval)",
         "hide": 2,
         "includeAll": false,
         "multi": false,
         "name": "sync_epochs_var",
         "options": [],
         "query": {
-          "query": "label_values(ethereum_validators_monitoring_validator_count_with_sync_participation_less_avg_last_n_epoch, epoch_interval)",
+          "query": "label_values(catalist_validators_monitoring_validator_count_with_sync_participation_less_avg_last_n_epoch, epoch_interval)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -4283,7 +4120,7 @@
           "type": "prometheus",
           "uid": "PBFA97CFB590B2093"
         },
-        "definition": "query_result(ethereum_validators_monitoring_chain_sync_participation_avg_percent)",
+        "definition": "query_result(catalist_validators_monitoring_chain_sync_participation_avg_percent)",
         "description": "Chain sync participation average value",
         "hide": 2,
         "includeAll": false,
@@ -4292,7 +4129,7 @@
         "name": "chain_sync_avg_participation",
         "options": [],
         "query": {
-          "query": "query_result(ethereum_validators_monitoring_chain_sync_participation_avg_percent)",
+          "query": "query_result(catalist_validators_monitoring_chain_sync_participation_avg_percent)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 2,
@@ -4311,7 +4148,7 @@
           "type": "prometheus",
           "uid": "PBFA97CFB590B2093"
         },
-        "definition": "query_result(sum_over_time((changes(sum(ethereum_validators_monitoring_epoch_number)[25s:]) > 0)[$__range:]))",
+        "definition": "query_result(sum_over_time((changes(sum(catalist_validators_monitoring_epoch_number)[25s:]) > 0)[$__range:]))",
         "description": "Epochs range by prometheus metric",
         "hide": 2,
         "includeAll": false,
@@ -4320,7 +4157,7 @@
         "name": "epochs_range",
         "options": [],
         "query": {
-          "query": "query_result(sum_over_time((changes(sum(ethereum_validators_monitoring_epoch_number)[25s:]) > 0)[$__range:]))",
+          "query": "query_result(sum_over_time((changes(sum(catalist_validators_monitoring_epoch_number)[25s:]) > 0)[$__range:]))",
           "refId": "StandardVariableQuery"
         },
         "refresh": 2,
@@ -4332,18 +4169,14 @@
       {
         "current": {
           "selected": true,
-          "text": [
-            "All"
-          ],
-          "value": [
-            "$__all"
-          ]
+          "text": ["All"],
+          "value": ["$__all"]
         },
         "datasource": {
           "type": "prometheus",
           "uid": "PBFA97CFB590B2093"
         },
-        "definition": "query_result(ethereum_validators_monitoring_user_validators)",
+        "definition": "query_result(catalist_validators_monitoring_user_validators)",
         "hide": 0,
         "includeAll": true,
         "label": "Node Operator",
@@ -4351,7 +4184,7 @@
         "name": "nos_name_var",
         "options": [],
         "query": {
-          "query": "query_result(ethereum_validators_monitoring_user_validators)",
+          "query": "query_result(catalist_validators_monitoring_user_validators)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -4392,15 +4225,7 @@
     "to": "now"
   },
   "timepicker": {
-    "refresh_intervals": [
-      "1m",
-      "5m",
-      "15m",
-      "30m",
-      "1h",
-      "2h",
-      "1d"
-    ]
+    "refresh_intervals": ["1m", "5m", "15m", "30m", "1h", "2h", "1d"]
   },
   "timezone": "",
   "title": "Rewards & Penalties",

@@ -1,4 +1,4 @@
-import { FallbackProviderModule } from '@lido-nestjs/execution';
+import { FallbackProviderModule } from '@catalist-nestjs/execution';
 import { Global, Module } from '@nestjs/common';
 import { NonEmptyArray } from 'fp-ts/NonEmptyArray';
 
