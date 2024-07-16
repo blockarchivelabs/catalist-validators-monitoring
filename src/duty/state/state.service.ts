@@ -3,7 +3,7 @@ import { BooleanType, ByteVectorType, ContainerNodeStructType, UintNumberType } 
 import { ArrayBasicTreeView } from '@chainsafe/ssz/lib/view/arrayBasic';
 import { ListCompositeTreeView } from '@chainsafe/ssz/lib/view/listComposite';
 import { BigNumber } from '@ethersproject/bignumber';
-import { LOGGER_PROVIDER } from '@lido-nestjs/logger';
+import { LOGGER_PROVIDER } from '@catalist-nestjs/logger';
 import { Inject, Injectable, LoggerService } from '@nestjs/common';
 
 import { ConfigService } from 'common/config';

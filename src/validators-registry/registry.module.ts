@@ -1,4 +1,4 @@
-import { LOGGER_PROVIDER } from '@lido-nestjs/logger';
+import { LOGGER_PROVIDER } from '@catalist-nestjs/logger';
 import { Global, LoggerService, Module } from '@nestjs/common';
 
 import { ValidatorRegistrySource } from 'common/config';

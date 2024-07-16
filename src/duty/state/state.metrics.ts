@@ -1,5 +1,5 @@
-import { LOGGER_PROVIDER } from '@lido-nestjs/logger';
-import { RegistryOperator } from '@lido-nestjs/registry';
+import { LOGGER_PROVIDER } from '@catalist-nestjs/logger';
+import { RegistryOperator } from '@catalist-nestjs/registry';
 import { Inject, Injectable, LoggerService } from '@nestjs/common';
 
 import { ConfigService } from 'common/config';
@@ -241,7 +241,7 @@ export class StateMetrics {
       { type: 'used' },
       (this.operators as any as RegistryOperator[]).reduce((sum, o: RegistryOperator) => sum + o.usedSigningKeys, 0),
     );
-    const bufferedEther = (await this.registryService.source.contract.getBufferedEther()).div(GWEI_WEI_RATIO).div(ETH_GWEI_RATIO);
+    const bufferedEther = (await this.registryService.source.contract.getBufferedAce()).div(GWEI_WEI_RATIO).div(ETH_GWEI_RATIO);
     this.prometheus.bufferedEther.set(bufferedEther.toNumber());
   }
 }

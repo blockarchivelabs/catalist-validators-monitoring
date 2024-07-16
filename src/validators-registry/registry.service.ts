@@ -1,6 +1,6 @@
 import { readFile } from 'fs/promises';
 
-import { LOGGER_PROVIDER } from '@lido-nestjs/logger';
+import { LOGGER_PROVIDER } from '@catalist-nestjs/logger';
 import { Inject, Injectable, LoggerService } from '@nestjs/common';
 import { load } from 'js-yaml';
 

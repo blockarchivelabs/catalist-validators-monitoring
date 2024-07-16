@@ -1,4 +1,4 @@
-import { LoggerModule as Logger, jsonTransport, simpleTransport } from '@lido-nestjs/logger';
+import { LoggerModule as Logger, jsonTransport, simpleTransport } from '@catalist-nestjs/logger';
 
 import { ConfigModule, ConfigService, LogFormat } from 'common/config';
 

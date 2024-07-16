@@ -1,5 +1,5 @@
 import { ContainerTreeViewType } from '@chainsafe/ssz/lib/view/container';
-import { LOGGER_PROVIDER } from '@lido-nestjs/logger';
+import { LOGGER_PROVIDER } from '@catalist-nestjs/logger';
 import { Inject, Injectable, LoggerService } from '@nestjs/common';
 import { NonEmptyArray } from 'fp-ts/NonEmptyArray';
 import { request } from 'undici';

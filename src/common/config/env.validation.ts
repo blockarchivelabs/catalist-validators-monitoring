@@ -26,6 +26,7 @@ export enum Network {
   Mainnet = 1,
   Goerli = 5,
   Holesky = 17000,
+  Endurance = 648,
 }
 
 export enum ValidatorRegistrySource {
@@ -169,7 +170,7 @@ export class EnvironmentVariables {
   @Min(74240) // Altair
   @Transform(({ value }) => parseInt(value, 10), { toClassOnly: true })
   @ValidateIf((vars) => vars.ETH_NETWORK === Network.Mainnet)
-  public START_EPOCH = 155000;
+  public START_EPOCH = 15500;
 
   @IsInt()
   @IsPositive()

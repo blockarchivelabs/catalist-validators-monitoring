@@ -1,7 +1,7 @@
 import { Readable, Transform } from 'stream';
 
 import { ClickHouseClient, createClient } from '@clickhouse/client';
-import { LOGGER_PROVIDER } from '@lido-nestjs/logger';
+import { LOGGER_PROVIDER } from '@catalist-nestjs/logger';
 import { Inject, Injectable, LoggerService, OnModuleInit } from '@nestjs/common';
 import { chain } from 'stream-chain';
 import { batch } from 'stream-json/utils/Batch';

@@ -1,4 +1,4 @@
-import { ValidatorRegistryModule } from '@lido-nestjs/registry';
+import { ValidatorRegistryModule } from '@catalist-nestjs/registry';
 import { Module } from '@nestjs/common';
 
 import { ExecutionProvider, ExecutionProviderModule } from 'common/execution-provider';

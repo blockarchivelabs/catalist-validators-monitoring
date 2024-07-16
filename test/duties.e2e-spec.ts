@@ -1,6 +1,6 @@
 import * as process from 'process';
 
-import { LoggerModule, nullTransport } from '@lido-nestjs/logger';
+import { LoggerModule, nullTransport } from '@catalist-nestjs/logger';
 import { Test } from '@nestjs/testing';
 
 import { ConfigModule } from 'common/config';
