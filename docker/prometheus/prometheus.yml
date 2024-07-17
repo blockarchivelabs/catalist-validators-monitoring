@@ -32,7 +32,8 @@ scrape_configs:
         regex: '(\d+);(\d+)'
         replacement: ${1};${2}
         target_label: nos_global_index
+
   - job_name: 'keys_api'
     metrics_path: /metrics
     static_configs:
-      - targets: ['https://kapi.catalist.app']
+      - targets: ['kapi.catalist.app']
