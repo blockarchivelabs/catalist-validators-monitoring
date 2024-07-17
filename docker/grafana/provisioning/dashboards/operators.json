@@ -1593,7 +1593,7 @@
                   {
                     "targetBlank": true,
                     "title": "blockcha.in",
-                    "url": "https://beaconcha.in/validator/${__value.raw}"
+                    "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                   }
                 ]
               }
@@ -1931,8 +1931,8 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "beaconcha.in",
-                    "url": "https://beaconcha.in/validator/${__value.raw}"
+                    "title": "beacon.fusionist.io",
+                    "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                   }
                 ]
               },
@@ -2099,8 +2099,8 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "beaconcha.in",
-                    "url": "https://beaconcha.in/validator/${__value.raw}"
+                    "title": "beacon.fusionist.io",
+                    "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                   }
                 ]
               },
@@ -2125,8 +2125,8 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "beaconcha.in",
-                    "url": "https://beaconcha.in/slot/${__value.raw}"
+                    "title": "beacon.fusionist.io",
+                    "url": "https://beacon.fusionist.io/slot/${__value.raw}"
                   }
                 ]
               }
@@ -2294,8 +2294,8 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "beaconcha.in",
-                    "url": "https://beaconcha.in/validator/${__value.raw}"
+                    "title": "beacon.fusionist.io",
+                    "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                   }
                 ]
               },
@@ -2435,8 +2435,8 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "beaconcha.in",
-                    "url": "https://beaconcha.in/validator/${__value.raw}"
+                    "title": "beacon.fusionist.io",
+                    "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                   }
                 ]
               },
@@ -2575,8 +2575,8 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "beaconcha.in",
-                    "url": "https://beaconcha.in/validator/${__value.raw}"
+                    "title": "beacon.fusionist.io",
+                    "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                   }
                 ]
               },
@@ -2728,8 +2728,8 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "beaconcha.in",
-                    "url": "https://beaconcha.in/validator/${__value.raw}"
+                    "title": "beacon.fusionist.io",
+                    "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                   }
                 ]
               },
@@ -2880,8 +2880,8 @@
                 "value": [
                   {
                     "targetBlank": true,
-                    "title": "beaconcha.in",
-                    "url": "https://beaconcha.in/validator/${__value.raw}"
+                    "title": "beacon.fusionist.io",
+                    "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                   }
                 ]
               },
@@ -3363,8 +3363,8 @@
                     "value": [
                       {
                         "targetBlank": true,
-                        "title": "beaconcha.in",
-                        "url": "https://beaconcha.in/validator/${__value.raw}"
+                        "title": "beacon.fusionist.io",
+                        "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                       }
                     ]
                   },
@@ -3616,8 +3616,8 @@
                     "value": [
                       {
                         "targetBlank": true,
-                        "title": "beaconcha.in",
-                        "url": "https://beaconcha.in/validator/${__value.raw}"
+                        "title": "beacon.fusionist.io",
+                        "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                       }
                     ]
                   },
@@ -3642,8 +3642,8 @@
                     "value": [
                       {
                         "targetBlank": true,
-                        "title": "beaconcha.in",
-                        "url": "https://beaconcha.in/slot/${__value.raw}"
+                        "title": "beacon.fusionist.io",
+                        "url": "https://beacon.fusionist.io/slot/${__value.raw}"
                       }
                     ]
                   }
@@ -4119,8 +4119,8 @@
                     "value": [
                       {
                         "targetBlank": true,
-                        "title": "beaconcha.in",
-                        "url": "https://beaconcha.in/validator/${__value.raw}"
+                        "title": "beacon.fusionist.io",
+                        "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                       }
                     ]
                   },
@@ -4447,8 +4447,8 @@
                     "value": [
                       {
                         "targetBlank": true,
-                        "title": "beaconcha.in",
-                        "url": "https://beaconcha.in/validator/${__value.raw}"
+                        "title": "beacon.fusionist.io",
+                        "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                       }
                     ]
                   },
@@ -4736,8 +4736,8 @@
                     "value": [
                       {
                         "targetBlank": true,
-                        "title": "beaconcha.in",
-                        "url": "https://beaconcha.in/validator/${__value.raw}"
+                        "title": "beacon.fusionist.io",
+                        "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                       }
                     ]
                   },
@@ -5025,8 +5025,8 @@
                     "value": [
                       {
                         "targetBlank": true,
-                        "title": "beaconcha.in",
-                        "url": "https://beaconcha.in/validator/${__value.raw}"
+                        "title": "beacon.fusionist.io",
+                        "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                       }
                     ]
                   },
@@ -5314,8 +5314,8 @@
                     "value": [
                       {
                         "targetBlank": true,
-                        "title": "beaconcha.in",
-                        "url": "https://beaconcha.in/validator/${__value.raw}"
+                        "title": "beacon.fusionist.io",
+                        "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                       }
                     ]
                   },
@@ -5603,8 +5603,8 @@
                     "value": [
                       {
                         "targetBlank": true,
-                        "title": "beaconcha.in",
-                        "url": "https://beaconcha.in/validator/${__value.raw}"
+                        "title": "beacon.fusionist.io",
+                        "url": "https://beacon.fusionist.io/validator/${__value.raw}"
                       }
                     ]
                   },
