@@ -109,9 +109,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -340,9 +338,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -405,9 +401,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -467,9 +461,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -548,9 +540,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -615,9 +605,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -682,9 +670,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -749,9 +735,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -823,9 +807,7 @@
         "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -916,16 +898,11 @@
           "displayMode": "table",
           "placement": "bottom",
           "showLegend": true,
-          "values": [
-            "value",
-            "percent"
-          ]
+          "values": ["value", "percent"]
         },
         "pieType": "donut",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -1033,16 +1010,11 @@
           "displayMode": "table",
           "placement": "bottom",
           "showLegend": true,
-          "values": [
-            "value",
-            "percent"
-          ]
+          "values": ["value", "percent"]
         },
         "pieType": "donut",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -1151,16 +1123,11 @@
           "displayMode": "table",
           "placement": "bottom",
           "showLegend": true,
-          "values": [
-            "value",
-            "percent"
-          ]
+          "values": ["value", "percent"]
         },
         "pieType": "donut",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -1269,16 +1236,11 @@
           "displayMode": "table",
           "placement": "bottom",
           "showLegend": true,
-          "values": [
-            "value",
-            "percent"
-          ]
+          "values": ["value", "percent"]
         },
         "pieType": "donut",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -1386,15 +1348,11 @@
           "displayMode": "table",
           "placement": "bottom",
           "showLegend": true,
-          "values": [
-            "value"
-          ]
+          "values": ["value"]
         },
         "pieType": "donut",
         "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -1667,7 +1625,7 @@
             "properties": [
               {
                 "id": "unit",
-                "value": "ETH"
+                "value": "ACE"
               }
             ]
           },
@@ -1723,12 +1681,8 @@
         "footer": {
           "countRows": false,
           "enablePagination": true,
-          "fields": [
-            "Balance"
-          ],
-          "reducer": [
-            "sum"
-          ],
+          "fields": ["Balance"],
+          "reducer": ["sum"],
           "show": true
         },
         "showHeader": true
@@ -2070,9 +2024,7 @@
           "countRows": false,
           "enablePagination": true,
           "fields": "",
-          "reducer": [
-            "sum"
-          ],
+          "reducer": ["sum"],
           "show": false
         },
         "showHeader": true,
@@ -2233,9 +2185,7 @@
           "countRows": false,
           "enablePagination": true,
           "fields": "",
-          "reducer": [
-            "sum"
-          ],
+          "reducer": ["sum"],
           "show": false
         },
         "showHeader": true,
@@ -2408,9 +2358,7 @@
           "countRows": false,
           "enablePagination": true,
           "fields": "",
-          "reducer": [
-            "sum"
-          ],
+          "reducer": ["sum"],
           "show": false
         },
         "showHeader": true,
@@ -2551,9 +2499,7 @@
           "countRows": false,
           "enablePagination": true,
           "fields": "",
-          "reducer": [
-            "sum"
-          ],
+          "reducer": ["sum"],
           "show": false
         },
         "showHeader": true,
@@ -2705,9 +2651,7 @@
           "countRows": false,
           "enablePagination": true,
           "fields": "",
-          "reducer": [
-            "sum"
-          ],
+          "reducer": ["sum"],
           "show": false
         },
         "showHeader": true,
@@ -2860,9 +2804,7 @@
           "countRows": false,
           "enablePagination": true,
           "fields": "",
-          "reducer": [
-            "sum"
-          ],
+          "reducer": ["sum"],
           "show": false
         },
         "showHeader": true,
@@ -3002,9 +2944,7 @@
           "countRows": false,
           "enablePagination": true,
           "fields": "",
-          "reducer": [
-            "sum"
-          ],
+          "reducer": ["sum"],
           "show": false
         },
         "showHeader": true,
@@ -3116,7 +3056,7 @@
                 "properties": [
                   {
                     "id": "unit",
-                    "value": "ETH"
+                    "value": "ACE"
                   }
                 ]
               }
@@ -3487,9 +3427,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": "",
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": false
             },
             "showHeader": true,
@@ -3503,7 +3441,7 @@
           "pluginVersion": "9.5.7",
           "targets": [
             {
-                  "datasource": {
+              "datasource": {
                 "type": "vertamedia-clickhouse-datasource",
                 "uid": "PDEE91DDB90597936"
               },
@@ -3764,9 +3702,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": "",
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": false
             },
             "showHeader": true,
@@ -3780,7 +3716,7 @@
           "pluginVersion": "9.5.7",
           "targets": [
             {
-                  "datasource": {
+              "datasource": {
                 "type": "vertamedia-clickhouse-datasource",
                 "uid": "PDEE91DDB90597936"
               },
@@ -4047,9 +3983,7 @@
           "id": 1745,
           "options": {
             "legend": {
-              "calcs": [
-                "lastNotNull"
-              ],
+              "calcs": ["lastNotNull"],
               "displayMode": "table",
               "placement": "right",
               "showLegend": true,
@@ -4271,9 +4205,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": "",
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": false
             },
             "showHeader": true,
@@ -4287,7 +4219,7 @@
           "pluginVersion": "9.5.7",
           "targets": [
             {
-                  "datasource": {
+              "datasource": {
                 "type": "vertamedia-clickhouse-datasource",
                 "uid": "PDEE91DDB90597936"
               },
@@ -4579,9 +4511,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": "",
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": false
             },
             "showHeader": true,
@@ -4595,7 +4525,7 @@
           "pluginVersion": "9.5.7",
           "targets": [
             {
-                  "datasource": {
+              "datasource": {
                 "type": "vertamedia-clickhouse-datasource",
                 "uid": "PDEE91DDB90597936"
               },
@@ -4870,9 +4800,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": "",
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": false
             },
             "showHeader": true,
@@ -4886,7 +4814,7 @@
           "pluginVersion": "9.5.7",
           "targets": [
             {
-                  "datasource": {
+              "datasource": {
                 "type": "vertamedia-clickhouse-datasource",
                 "uid": "PDEE91DDB90597936"
               },
@@ -5161,9 +5089,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": "",
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": false
             },
             "showHeader": true,
@@ -5177,7 +5103,7 @@
           "pluginVersion": "9.5.7",
           "targets": [
             {
-                  "datasource": {
+              "datasource": {
                 "type": "vertamedia-clickhouse-datasource",
                 "uid": "PDEE91DDB90597936"
               },
@@ -5452,9 +5378,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": "",
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": false
             },
             "showHeader": true,
@@ -5468,7 +5392,7 @@
           "pluginVersion": "9.5.7",
           "targets": [
             {
-                  "datasource": {
+              "datasource": {
                 "type": "vertamedia-clickhouse-datasource",
                 "uid": "PDEE91DDB90597936"
               },
@@ -5743,9 +5667,7 @@
               "countRows": false,
               "enablePagination": true,
               "fields": "",
-              "reducer": [
-                "sum"
-              ],
+              "reducer": ["sum"],
               "show": false
             },
             "showHeader": true,
@@ -5759,7 +5681,7 @@
           "pluginVersion": "9.5.7",
           "targets": [
             {
-                  "datasource": {
+              "datasource": {
                 "type": "vertamedia-clickhouse-datasource",
                 "uid": "PDEE91DDB90597936"
               },
